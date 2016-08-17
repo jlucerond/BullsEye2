@@ -286,6 +286,7 @@
 				D88D32831D4116C7000D7D34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
