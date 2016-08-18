@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,11 +26,16 @@ class ViewController: UIViewController {
                                        preferredStyle: .Alert)
         
         let action = UIAlertAction (title: "click here",
-                                    style: .Default, handler: nil)
+                                    style: .Default,
+                                    handler: nil)
         
         alert.addAction(action)
         
         presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    @IBAction func sliderMoved(slider: UISlider) {
+        print("The value of the slider is now: \(slider.value)")
     }
 }
 
